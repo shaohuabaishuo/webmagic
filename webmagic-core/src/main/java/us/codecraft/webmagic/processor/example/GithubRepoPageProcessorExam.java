@@ -32,8 +32,7 @@ public class GithubRepoPageProcessorExam implements PageProcessor {
     public static void main(String[] args) {
         Spider.create(new GithubRepoPageProcessorExam())
                 .addUrl("http://webmagic.io/docs/zh/posts/ch4-basic-page-processor/pageprocessor.html")
-                .addPipeline(new JsonFilePipeline("D:\\magic\\"))
-                .thread(5)
-                .run();
+//                .addPipeline(new JsonFilePipeline("D:\\magic\\"))
+                .thread(5).run();
     }
 }
